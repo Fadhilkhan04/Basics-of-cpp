@@ -27,7 +27,11 @@ class class_name {
 
 int main() {
    
-   class_name obj(5,6);
+   class_name *obj = new class_name(5,6);
+
+   delete obj;
+
+   cout << 10 << endl;
 
    return 0;
 }
